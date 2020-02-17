@@ -1,0 +1,10 @@
+
+\.idea/
+
+lib/xk_momiji_generator/ebin/
+
+lib/xk_momiji_generator/\.rebar/
+
+xk_momiji\.iml
+
+lib/xk_momiji_generator/erl_crash\.dump

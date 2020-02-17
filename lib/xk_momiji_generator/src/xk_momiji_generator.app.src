@@ -1,0 +1,19 @@
+{application, xk_momiji_generator,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [kernel, stdlib, emysql]},
+  {mod, { xk_momiji_generator_app, [
+    #{
+     database => "database_name", %% 数据库名
+     table_matcher => ["im_%", "t_user"], %% 匹配表格 可用%匹配
+
+     host => "127.0.0.1",
+     port => 3306,
+     username => "root",
+     password => "root"
+    }
+  ]}},
+  {env, []}
+ ]}.
